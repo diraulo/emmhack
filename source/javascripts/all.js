@@ -1,1 +1,3 @@
-// This is where it all goes :)
+//= require jquery.min
+//= require bootstrap.min
+//= require material.min
