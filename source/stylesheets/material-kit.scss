@@ -52,7 +52,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 }
 
 a {
-  color: #9c27b0;
+  color: $primary-color;
 
   &:hover, &:focus {
     color: #89229b;
@@ -535,86 +535,88 @@ fieldset[disabled] .navbar .navbar-nav > li > a.btn.btn-default {
 }
 
 .btn.btn-primary, .navbar .navbar-nav > li > a.btn.btn-primary {
-  box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
+  box-shadow: 0 2px 2px 0 rgba($primary-shadow, 0.14),
+              0 3px 1px -2px rgba($primary-shadow, 0.2),
+              0 1px 5px 0 rgba($primary-shadow, 0.12);
 }
 
 .btn.btn-primary {
-  background-color: #9c27b0;
+  background-color: $primary-color;
   color: #FFFFFF;
 
   &:hover, &:focus, &:active, &.active {
-    background-color: #9c27b0;
+    background-color: $primary-color;
     color: #FFFFFF;
   }
 
   &:active {
     &:focus, &:hover {
-      background-color: #9c27b0;
+      background-color: $primary-color;
       color: #FFFFFF;
     }
   }
 
   &.active {
     &:focus, &:hover {
-      background-color: #9c27b0;
+      background-color: $primary-color;
       color: #FFFFFF;
     }
   }
 }
 
 .open > .btn.btn-primary.dropdown-toggle {
-  background-color: #9c27b0;
+  background-color: $primary-color;
   color: #FFFFFF;
 
   &:focus, &:hover {
-    background-color: #9c27b0;
+    background-color: $primary-color;
     color: #FFFFFF;
   }
 }
 
 .navbar .navbar-nav > li > a.btn.btn-primary {
-  background-color: #9c27b0;
+  background-color: $primary-color;
   color: #FFFFFF;
 
   &:hover, &:focus, &:active, &.active {
-    background-color: #9c27b0;
+    background-color: $primary-color;
     color: #FFFFFF;
   }
 
   &:active {
     &:focus, &:hover {
-      background-color: #9c27b0;
+      background-color: $primary-color;
       color: #FFFFFF;
     }
   }
 
   &.active {
     &:focus, &:hover {
-      background-color: #9c27b0;
+      background-color: $primary-color;
       color: #FFFFFF;
     }
   }
 }
 
 .open > .navbar .navbar-nav > li > a.btn.btn-primary.dropdown-toggle {
-  background-color: #9c27b0;
+  background-color: $primary-color;
   color: #FFFFFF;
 
   &:focus, &:hover {
-    background-color: #9c27b0;
+    background-color: $primary-color;
     color: #FFFFFF;
   }
 }
 
 .btn.btn-primary {
   &:focus, &:active, &:hover {
-    box-shadow: 0 14px 26px -12px rgba(156, 39, 176, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+    box-shadow: 0 14px 26px -12px rgba($primary-shadow, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($primary-shadow, 0.2);
   }
 }
 
 .navbar .navbar-nav > li > a.btn.btn-primary {
   &:focus, &:active, &:hover {
-    box-shadow: 0 14px 26px -12px rgba(156, 39, 176, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+    box-shadow: 0 14px 26px -12px rgba($primary-shadow, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($primary-shadow, 0.2);
   }
 }
 
@@ -688,21 +690,21 @@ fieldset[disabled] .navbar .navbar-nav > li > a.btn.btn-primary {
 
 .btn.btn-primary.btn-simple, .navbar .navbar-nav > li > a.btn.btn-primary.btn-simple {
   background-color: transparent;
-  color: #9c27b0;
+  color: $primary-color;
   box-shadow: none;
 }
 
 .btn.btn-primary.btn-simple {
   &:hover, &:focus, &:active {
     background-color: transparent;
-    color: #9c27b0;
+    color: $primary-color;
   }
 }
 
 .navbar .navbar-nav > li > a.btn.btn-primary.btn-simple {
   &:hover, &:focus, &:active {
     background-color: transparent;
-    color: #9c27b0;
+    color: $primary-color;
   }
 }
 
@@ -2078,7 +2080,7 @@ fieldset[disabled] .navbar .navbar-nav > li > a.btn.btn-rose {
 }
 
 .btn-group.open > .dropdown-toggle.btn.btn-primary, .btn-group-vertical.open > .dropdown-toggle.btn.btn-primary {
-  background-color: #9c27b0;
+  background-color: $primary-color;
 }
 
 .btn-group.open > .dropdown-toggle.btn.btn-success, .btn-group-vertical.open > .dropdown-toggle.btn.btn-success {
@@ -2240,7 +2242,7 @@ fieldset[disabled] .form-group.is-focused .checkbox label {
 
     &:checked + .checkbox-material {
       .check {
-        background: #9c27b0;
+        background: $primary-color;
 
         &:before {
           color: #FFFFFF;
@@ -2424,13 +2426,13 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
     &:checked + .toggle {
       &:after {
         left: 15px;
-        border-color: #9c27b0;
+        border-color: $primary-color;
       }
 
-      background-color: rgba(156, 39, 176, 0.7);
+      background-color: rgba($primary-shadow, 0.7);
 
       &:active:after {
-        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba(156, 39, 176, 0.1);
+        box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4), 0 0 0 15px rgba($primary-shadow, 0.1);
       }
     }
   }
@@ -2476,7 +2478,7 @@ fieldset[disabled] .form-group.is-focused .radio label {
       height: 15px;
       width: 15px;
       border-radius: 100%;
-      background-color: #9c27b0;
+      background-color: $primary-color;
       transform: scale3d(0, 0, 0);
 
       &:after {
@@ -2519,11 +2521,11 @@ fieldset[disabled] .form-group.is-focused .radio label {
       }
 
       .check {
-        background-color: #9c27b0;
+        background-color: $primary-color;
       }
 
       .circle {
-        border-color: #9c27b0;
+        border-color: $primary-color;
       }
 
       .check {
@@ -2756,7 +2758,7 @@ output {
   }
 
   &.label-primary {
-    background-color: #9c27b0;
+    background-color: $primary-color;
   }
 
   &.label-success {
@@ -2782,7 +2784,7 @@ output {
 
 .form-control, .form-group .form-control {
   border: 0;
-  background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+  background-image: linear-gradient($primary-color, $primary-color), linear-gradient(#D2D2D2, #D2D2D2);
   background-size: 0 2px, 100% 1px;
   background-repeat: no-repeat;
   background-position: center bottom, center calc(100% - 1px);
@@ -2852,13 +2854,13 @@ fieldset[disabled] .form-group .form-control {
   &.is-focused {
     .form-control {
       outline: none;
-      background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+      background-image: linear-gradient($primary-color, $primary-color), linear-gradient(#D2D2D2, #D2D2D2);
       background-size: 100% 2px, 100% 1px;
       box-shadow: none;
       transition-duration: 0.3s;
 
       .material-input:after {
-        background-color: #9c27b0;
+        background-color: $primary-color;
       }
     }
 
@@ -3310,30 +3312,30 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
       }
 
       a {
-        background-color: #9c27b0;
-        border-color: #9c27b0;
+        background-color: $primary-color;
+        border-color: $primary-color;
         color: #FFFFFF;
-        box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
+        box-shadow: 0 4px 5px 0 rgba($primary-shadow, 0.14), 0 1px 10px 0 rgba($primary-shadow, 0.12), 0 2px 4px -1px rgba($primary-shadow, 0.2);
 
         &:focus, &:hover {
-          background-color: #9c27b0;
-          border-color: #9c27b0;
+          background-color: $primary-color;
+          border-color: $primary-color;
           color: #FFFFFF;
-          box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
+          box-shadow: 0 4px 5px 0 rgba($primary-shadow, 0.14), 0 1px 10px 0 rgba($primary-shadow, 0.12), 0 2px 4px -1px rgba($primary-shadow, 0.2);
         }
       }
 
       span {
-        background-color: #9c27b0;
-        border-color: #9c27b0;
+        background-color: $primary-color;
+        border-color: $primary-color;
         color: #FFFFFF;
-        box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
+        box-shadow: 0 4px 5px 0 rgba($primary-shadow, 0.14), 0 1px 10px 0 rgba($primary-shadow, 0.12), 0 2px 4px -1px rgba($primary-shadow, 0.2);
 
         &:focus, &:hover {
-          background-color: #9c27b0;
-          border-color: #9c27b0;
+          background-color: $primary-color;
+          border-color: $primary-color;
           color: #FFFFFF;
-          box-shadow: 0 4px 5px 0 rgba(156, 39, 176, 0.14), 0 1px 10px 0 rgba(156, 39, 176, 0.12), 0 2px 4px -1px rgba(156, 39, 176, 0.2);
+          box-shadow: 0 4px 5px 0 rgba($primary-shadow, 0.14), 0 1px 10px 0 rgba($primary-shadow, 0.12), 0 2px 4px -1px rgba($primary-shadow, 0.2);
         }
       }
     }
@@ -3495,14 +3497,14 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
     }
 
     &.active > a {
-      background-color: #9c27b0;
+      background-color: $primary-color;
       color: #FFFFFF;
-      box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+      box-shadow: 0 16px 26px -10px rgba($primary-shadow, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($primary-shadow, 0.2);
 
       &:focus, &:hover {
-        background-color: #9c27b0;
+        background-color: $primary-color;
         color: #FFFFFF;
-        box-shadow: 0 16px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);
+        box-shadow: 0 16px 26px -10px rgba($primary-shadow, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($primary-shadow, 0.2);
       }
     }
   }
@@ -3937,7 +3939,7 @@ fieldset[disabled] .navbar .btn-link {
   }
 
   &.navbar-primary {
-    background-color: #9c27b0;
+    background-color: $primary-color;
     color: #ffffff;
 
     .navbar-form {
@@ -3952,12 +3954,12 @@ fieldset[disabled] .navbar .btn-link {
       li > a {
         &:hover, &:focus {
           color: #FFFFFF;
-          background-color: #9c27b0;
+          background-color: $primary-color;
         }
       }
 
       .active > a {
-        background-color: #9c27b0;
+        background-color: $primary-color;
         color: #ffffff;
 
         &:hover, &:focus {
@@ -4230,7 +4232,7 @@ fieldset[disabled] .navbar .btn-link {
 
     a {
       &:hover, &:focus, &:active {
-        background-color: #9c27b0;
+        background-color: $primary-color;
         color: #FFFFFF;
       }
     }
@@ -4245,14 +4247,14 @@ fieldset[disabled] .navbar .btn-link {
   .dropdown-menu li > a {
     &:hover, &:focus {
       color: #FFFFFF;
-      background-color: #9c27b0;
+      background-color: $primary-color;
     }
   }
 
   &.navbar-default .dropdown-menu li > a {
     &:hover, &:focus {
       color: #FFFFFF;
-      background-color: #9c27b0;
+      background-color: $primary-color;
     }
   }
 }
@@ -4414,7 +4416,7 @@ fieldset[disabled] .navbar .btn-link {
     }
 
     &.progress-bar-primary {
-      background-color: #9c27b0;
+      background-color: $primary-color;
     }
 
     &.progress-bar-success {
@@ -4439,7 +4441,7 @@ fieldset[disabled] .navbar .btn-link {
   }
 
   &.progress-line-primary {
-    background: rgba(156, 39, 176, 0.2);
+    background: rgba($primary-shadow, 0.2);
   }
 
   &.progress-line-info {
@@ -4459,10 +4461,10 @@ fieldset[disabled] .navbar .btn-link {
   }
 
   .progress-bar {
-    background-color: #9c27b0;
+    background-color: $primary-color;
 
     &.progress-bar-default {
-      background-color: #9c27b0;
+      background-color: $primary-color;
     }
   }
 }
@@ -4561,7 +4563,7 @@ h2.title {
 }
 
 .text-primary {
-  color: #9c27b0;
+  color: $primary-color;
 }
 
 .text-danger {
@@ -4585,7 +4587,7 @@ h2.title {
 }
 
 .nav-tabs {
-  background: #9c27b0;
+  background: $primary-color;
   border: 0;
   border-radius: 3px;
   padding: 0 15px;
@@ -5502,11 +5504,11 @@ h2.title {
       color: #3C4858;
 
       &:hover, &:active {
-        color: #9c27b0;
+        color: $primary-color;
       }
 
       &[aria-expanded="true"] {
-        color: #9c27b0;
+        color: $primary-color;
 
         .panel-title > i {
           filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
@@ -5690,7 +5692,7 @@ hr {
 
 .icon {
   &.icon-primary {
-    color: #9c27b0;
+    color: $primary-color;
   }
 
   &.icon-info {
@@ -5913,7 +5915,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
 
       .selected, &:active, &:focus, &:hover {
         box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
-        background-color: #9c27b0;
+        background-color: $primary-color;
         color: #FFFFFF;
       }
 
@@ -6052,7 +6054,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
 
   &.tag-primary {
     .tag {
-      background-color: #9c27b0;
+      background-color: $primary-color;
       color: #FFFFFF;
 
       .tagsinput-remove-link {
@@ -6061,7 +6063,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
     }
 
     .tagsinput-add {
-      color: #9c27b0;
+      color: $primary-color;
     }
   }
 
@@ -7545,11 +7547,11 @@ footer {
   background: #c8c8c8;
 
   &.noUi-connect {
-    background-color: #9c27b0;
+    background-color: $primary-color;
   }
 
   .noUi-handle {
-    border-color: #9c27b0;
+    border-color: $primary-color;
   }
 
   &.slider-info {
@@ -7958,13 +7960,13 @@ footer {
       p, &:hover p {
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
         color: #ffffff;
-        background-color: #9c27b0;
+        background-color: $primary-color;
       }
     }
 
     &.primary {
       p, &:hover p {
-        background-color: #9c27b0;
+        background-color: $primary-color;
       }
     }
 
@@ -8010,11 +8012,11 @@ footer {
     }
 
     &.active {
-      background-color: #9c27b0;
+      background-color: $primary-color;
       box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 
       &:focus, &:hover, &:active {
-        background-color: #9c27b0;
+        background-color: $primary-color;
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
       }
 
@@ -8026,10 +8028,10 @@ footer {
     }
 
     &.primary {
-      background-color: #9c27b0;
+      background-color: $primary-color;
 
       &:hover {
-        background-color: #9c27b0;
+        background-color: $primary-color;
       }
     }
 
@@ -8247,7 +8249,7 @@ footer {
 }
 
 .presentation-page .navbar-primary, .index-page .navbar-primary {
-  background: linear-gradient(86deg, #9C27B0, #962E81);
+  background: linear-gradient(86deg, $primary-color, #962E81);
 }
 
 .presentation-page h4.description, .index-page h4.description {
