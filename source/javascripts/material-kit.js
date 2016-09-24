@@ -64,46 +64,47 @@ $(document).ready(function(){
 });
 
 materialKit = {
-    misc:{
-        navbar_menu_visible: 0
-    },
+  misc:{
+    navbar_menu_visible: 0
+  },
 
-    checkScrollForTransparentNavbar: debounce(function() {
-            if($(document).scrollTop() > 260 ) {
-                if(transparent) {
-                    transparent = false;
-                    $('.navbar-color-on-scroll').removeClass('navbar-transparent');
-                }
-            } else {
-                if( !transparent ) {
-                    transparent = true;
-                    $('.navbar-color-on-scroll').addClass('navbar-transparent');
-                }
-            }
-    }, 17),
-
-    initSliders: function(){
-        // Sliders for demo purpose
-        $('#sliderRegular').noUiSlider({
-            start: 40,
-            connect: "lower",
-            range: {
-                min: 0,
-                max: 100
-            }
-        });
-
-        $('#sliderDouble').noUiSlider({
-            start: [20, 60] ,
-            connect: true,
-            range: {
-                min: 0,
-                max: 100
-            }
-        });
+  checkScrollForTransparentNavbar: debounce(function() {
+    if($(document).scrollTop() > 260 ) {
+      if(transparent) {
+        transparent = false;
+        $('.navbar-color-on-scroll').removeClass('navbar-transparent');
+        $('#logo').attr('src', '/images/emmhack.svg');
+      }
+    } else {
+      if( !transparent ) {
+        transparent = true;
+        $('.navbar-color-on-scroll').addClass('navbar-transparent');
+        $('#logo').attr('src', '/images/emmhack-white.svg');
+      }
     }
-}
+  }, 17),
 
+  initSliders: function(){
+    // Sliders for demo purpose
+    $('#sliderRegular').noUiSlider({
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+
+    $('#sliderDouble').noUiSlider({
+      start: [20, 60] ,
+      connect: true,
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+  }
+};
 
 var big_image;
 
