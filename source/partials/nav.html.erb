@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#pablo">
+        <%= image_tag 'emmhack-white.svg', id: 'logo', height: '35px' %>
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="#challenges" onclick="goto('#challenges');">Challenges</a>
+        </li>
+        <li>
+          <a href="#prizes" onclick="goto('#prizes');">Prizes</a>
+        </li>
+        <li>
+          <a href="#faqs" onclick="goto('#faqs');">Faqs</a>
+        </li>
+        <li>
+          <a href="#sponsors" onclick="goto('#sponsors');">Sponsors</a>
+        </li>
+        <li>
+          <a href="#gallery" onclick="goto('#gallery');">Gallery</a>
+        </li>
+        <li>
+          <!-- <a href="#contact" onclick="goto('#contact');">Contact</a> -->
+          <a href="#contact" id="contact-link">Contact</a>
+        </li>
+        <li>
+          <a href="//emmhack.eventbrite.com" target="_blank" class="btn btn-primary">
+            Register
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
