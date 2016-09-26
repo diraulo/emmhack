@@ -1,0 +1,24 @@
+
+<div id="faqs" class="features-2">
+  <div class="text-center">
+    <h3 class="title">Frequently Asked Questions</h3>
+  </div>
+
+  <% data.faqs.each_slice(2) do |faqs| %>
+    <div class="row">
+      <% faqs.each_with_index do |question, index| %>
+        <div class="col-md-4 <%= index == 0 ? 'col-md-offset-2' : '' %>">
+          <div class="info info-horizontal">
+            <div class="icon <%= question.icon_class %>">
+              <i class="material-icons"><%= question.icon %></i>
+            </div>
+            <div class="description">
+              <h4 class="info-title"><%= question.title %></h4>
+              <p><%= question.answer %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
