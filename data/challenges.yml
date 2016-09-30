@@ -1,0 +1,23 @@
+-
+  title: Responsive Cities Challenge
+  description: How can we use open data to assist residents that are at risk?
+  thumbnail: challenges/rcc2016.png
+  external_link: http://challenge.responsivecities.org.za/
+-
+  title: Intelligent Analytics for the City
+  description: Many of the Departments want an analytical tool to help identify issues. E.g. DEMS – analytical tool that uses existing fed data to identify possible hot spots for fires etc. EMPD to identify possible crime spots. Social Development to identify areas where domestic violence occurs more often – can proactive service public better to prevent. So an analytical tool that can be used by many Departments using rules and intelligence specific to that Department.
+  thumbnail: challenges/smart-cities.png
+-
+  title: Human Settlement Application Monitor
+  description: An application should be created to administer the social housing application, waiting list and unit allocation processes.
+  thumbnail: challenges/rdp-houses.png
+-
+  title: Expansion of LEAP Application
+  description: Use LEAP App as a sandbox and see what additional improvements can be achieved.
+-
+  title: Department Works
+  description: One of the problems with the Ekurhuleni departments is that there lack of "publicity" or "shout" of the work done. Build an innovative solution that will ensure that people know of the work done by the departments with us of data available and crowdsourcing (smart citizenship).
+  external_link: http://ekurhuleni.gov.za/open/
+-
+  title: Cloning of existing Smart solutions
+  description: How can we leverage from ready-made mobile apps as white label solutions.
