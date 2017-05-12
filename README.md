@@ -58,3 +58,7 @@ This will generate the site's content in a `build` directory. You can upload the
 Alternatively, This site can also be hosted on [Github Pages](https://pages.github.com/) or on [Surge.sh](https://surge.sh)
 
 The site is currently hosted via surge.sh.
+
+### Author
+
+Built by [Raoul DIFFOUO](https://github.com/diraulo)
