@@ -4,11 +4,6 @@
   icon: access_time
   icon_class: icon-info
 -
-  title: Where can I find the challenges?
-  answer: Challenges are available on this site and will be emailed to all participants.
-  icon: extension
-  icon_class: icon-success
--
   title: Are there any prizes?
   answer: A total of R170 000 is up for grabs.
   icon: extension
@@ -40,7 +35,7 @@
   icon_class: icon-rose
 -
   title: How do I spread the word on social media?
-  answer: 'Start tweeting, facebooking about the Hackathon. Use #EMMHack.'
+  answer: 'Start tweeting, facebooking about the Hackathon. Use #NinjaHacks.'
   icon: share
   icon_class: icon-info
 -
